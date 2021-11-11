@@ -1,24 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Link from './components/LinkComponent';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Link text='Морские млекопитающие из инфраотряда китообразных' className='link-info' href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%82%D1%8B" />
+    </Fragment>
   );
 }
 
